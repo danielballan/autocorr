@@ -45,7 +45,7 @@ import sys
 
 from nose.tools import assert_equal, assert_true, raises
 
-import skxray.core.utils as core
+import skbeam.core.utils as core
 
 import numpy.testing as npt
 
@@ -465,7 +465,7 @@ def test_img_to_relative_fails():
 
 
 def test_img_to_relative_xyi(random_seed=None):
-    from skxray.core.utils import img_to_relative_xyi
+    from skbeam.core.utils import img_to_relative_xyi
     # make the RNG deterministic
     if random_seed is not None:
         np.random.seed(42)
